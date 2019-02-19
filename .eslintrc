@@ -1,0 +1,74 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "globals": {
+    "expect": true,
+    "__DEV__": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "arrowFunctions": true,
+      "blockBindings": true,
+      "classes": true,
+      "defaultParams": true,
+      "destructuring": true,
+      "forOf": true,
+      "generators": false,
+      "modules": true,
+      "objectLiteralComputedProperties": true,
+      "objectLiteralDuplicateProperties": false,
+      "objectLiteralShorthandMethods": true,
+      "objectLiteralShorthandProperties": true,
+      "spread": true,
+      "superInFunctions": true,
+      "templateStrings": true,
+      "jsx": true
+    }
+  },
+  "rules": {
+    "semi": ["error", "always"],
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "tabWidth": 2,
+        "ignoreUrls": true,
+        "ignoreComments": false,
+        "ignoreRegExpLiterals": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "no-shadow": 0,
+    "no-console": 0,
+    "no-alert": 0,
+    "no-underscore-dangle": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "object-curly-newline": [
+      0,
+      {
+        "ObjectExpression": {
+          "multiline": true,
+          "minProperties": 1
+        },
+        "ObjectPattern": {
+          "multiline": true,
+          "minProperties": 4
+        },
+        "ImportDeclaration": "never",
+        "ExportDeclaration": {
+          "multiline": true,
+          "minProperties": 4,
+          "consistent": true
+        }
+      }
+    ]
+  },
+  "plugins": [
+    "react"
+  ]
+}
