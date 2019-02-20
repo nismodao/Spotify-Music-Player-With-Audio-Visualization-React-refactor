@@ -10,7 +10,6 @@ class FrequencySpectrum extends React.Component {
   }
 
   static getDerivedStateFromProps(props, state) {
-    console.log(props);
     if (props.shouldDraw) {
       return {
         shouldDraw: props.shouldDraw,
